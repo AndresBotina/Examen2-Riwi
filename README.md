@@ -1,15 +1,16 @@
-# Landing PAge 
-Este es un proyecto de una landing page,  fue realizado como examen para el modulo 2 de Riwi.
-## Tecnologías utilizadas
+# Landing Page
+This is a landing page project, created as an exam for Module 2 of Riwi.
+
+## Technologies Used
 - HTML5
 - CSS3
-- FlexBox
-## Objetivos
-El objetivo del proyecto es crear la estructura básica de una landing page y el uso de Flexbox para la maquetación y alineación de los elementos
-## Características
-- Maquetación utilizando flexbox
-- Estructura semántica en HTML
-- Estilos personalizados con CSS
-## Como ver el p royecto
-1. Clona este repositorio:
+- Flexbox
+## Objectives
+The objective of the project is to create the basic structure of a landing page and use Flexbox for layout and alignment of elements.
+## Features
+- Layout using Flexbox
+- Semantic structure in HTML
+- Custom styles with CSS
+## How to View the Project
+1. Clone this repository:
 ```https://github.com/AndresBotina/Examen2-Riwi.git ```

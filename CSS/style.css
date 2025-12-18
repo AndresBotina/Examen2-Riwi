@@ -1,90 +1,159 @@
 
+/* Universal selector.
+   Applies padding to ALL elements on the page.
+   This affects spacing everywhere, so it must be used carefully */
 *{
     padding:  10px 35px;
 }
+
+/* ================= HEADER ================= */
+
+/* Main header container */
 .header1{
+    /* Uses Flexbox to align items in a horizontal row */
     display: flex;
+
+    /* Pushes elements to opposite sides (logo - nav - buttons) */
     justify-content: space-between;
+
+    /* Vertically centers all elements inside the header */
     align-items: center;
+
+    /* Light background color for the header */
     background-color: #F5F7FA;
 }
 
+/* Navigation container and links */
 .nav a,
 .nav{
+    /* Flexbox for horizontal layout */
     display: flex;
+
+    /* Space between navigation items */
     justify-content: space-between;
+
+    /* Gap between links */
     gap: 10px;
+
+    /* Removes underline from links */
     text-decoration: none;
+
+    /* Centers links vertically */
     align-items: center;
+
+    /* Text color */
     color: black;
 }
 
+/* Login and signup container */
 .login-signup a,
 .login-signup{
     display: flex;
     gap: 10px;
+
+    /* Removes underline from links */
     text-decoration: none;
+
+    /* Fixed height for alignment */
     height: 35px;
+
+    /* Vertical centering */
     align-items: center;
-    
 }
+
+/* Sign up button style */
 .sing-up{
     background-color: #4CAF4F;
     border-radius: 5px;
     color: #fff;
+
+    /* Slight scale to make the button stand out */
     transform: scale(1.2);
 }
+
+/* Hover effect for sign up (note: class name is different) */
 .sign-up{
     cursor: pointer;
     transition: 0.8s;
+
+    /* Darker green on hover */
     background-color: #0d2c0a;
+
+    /* Shadow to create depth */
     box-shadow: 3px 3px 10px #b9b6b6;
 }
+
+/* Login link style */
 .login{
     color: #4CAF4F;
 }
+
+/* ================= SECTION 1 (HERO) ================= */
+
 .section1{
     display: flex;
+
+    /* Space from the top of the page */
     margin-top: 100px;
+
+    /* Vertical alignment */
     align-items: center;
+
+    /* Same background as header for visual consistency */
     background-color: #F5F7FA;
-    
 }
 
+/* Text container in hero section */
 .article-section1{
     display: flex;
     flex-direction: column;
+
+    /* Space between text elements */
     justify-content: space-between;
+
     margin-bottom: 0;
-    padding:0;
+    padding: 0;
+
+    /* Large width for desktop layouts */
     width: 1000px;
 }
+
+/* Main title style */
 .titlep1{
     font-size: 64px;
     color: #4D4D4D ;
 }
 
+/* Paragraph styles inside hero section */
 .article-section1 p{
     margin-top: 0;
-    color: #717171;
     margin-bottom: 40px;
 }
+
+/* Green text highlight */
+
 .from8{
     color: #4CAF4F;
-
 }
+
+/* Register button */
 .registrer{
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 40px;
     width: 110px;
+
     background-color: #4CAF4F;
     margin-left: 35px;
     border-radius: 4px;
+
     text-decoration: none;
     color:#fff;
 }
+
+/* Hover effect for register button */
 .registrer:hover{
     cursor: pointer;
     transition: 0.8s;
@@ -92,29 +161,49 @@
     box-shadow: 3px 3px 10px #b9b6b6;
 }
 
+/* ================= DECORATIVE DOT SECTION ================= */
+
 .dot{
     display: flex;
     height: 50px;
+
+    /* Centers the dot image */
     align-items: center;
     justify-content: center;
+
     background-color: #F5F7FA;
 }
+
+/* ================= SECTION 2 ================= */
+
+/* Text alignment for section 2 */
 .div-section2 p{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     color: #4D4D4D;
     margin: 0;
 }
+
+/* Section title */
 .titlep-our{
     font-size: 36px;
     margin: 0%;
 }
+
+/* Client logos container */
 .logos{
     display: flex;
+
+    /* Align logos vertically */
     align-items: center;
+
+    /* Spread logos across the width */
     justify-content: space-between;
 }
+
+/* ================= SECTION 3 ================= */
 
 .section3{
     display: flex;
@@ -126,123 +215,175 @@
     margin: 0%;
 }
 
+/* Section header */
 .div1-section3{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* Space below the header */
     margin-bottom: 30px;
-    
 }
+
+/* Main title for section 3 */
 .title-div1{
     font-size: 36px ;
     color: #4D4D4D;
     text-align: center;
 }
+
+/* Feature cards container */
 .div2-section3{
     display: flex;
+
+    /* Space between cards */
     gap:10px
 }
+
+/* Individual feature card */
 .article-div2-sect3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
+
+/* Text inside feature cards */
 .article-div2-sect3 p{
     text-align: center;
     margin: 0%;
-    
 }
+
+/* Feature card title */
 .p-title{
     font-size: 28px;
     color: #4D4D4D;
 }
 
+/* ================= SECTION 4 ================= */
+
+/* Two-column layout */
 .article-section4{
     display: flex;
     align-items: center;
+
+    /* Space around image and text */
     justify-content: space-around;
-    
 }
 
+/* Green action button */
 .btn-section4{
     display: flex;
     justify-content: center;
+
     width: 151px;
     height: 52px;
+
     background-color: #4CAF4F;
     border-radius: 4px;
     color: #fff;
+
+    /* Centers text inside the button */
     align-items: center;
 }
+
+/* Hover animation for buttons */
 .btn-section4:hover{
     cursor: pointer;
     transition: 0.8s;
     background-color: #0d2c0a;
     box-shadow: 3px 3px 10px #b9b6b6;
 }
-    
 
-
+/* Text container width */
 .div2-section4{
     width: 600px;
     padding-left: 0;
 }
+
+/* Section 4 title */
 .section4-h2{
     padding-left: 0;
     font-size: 36px;
 }
+
+/* Text spacing reset */
 .div2-section4 p{
     margin: 0;
     padding:0;
 }
+
 .div2-section4 h2{
     margin: 0;
 }
 
+/* ================= SECTION 5 ================= */
+
 .section5{
-    align-items: center;
     display: flex;
+    align-items: center;
     background-color: #F5F7FA;
+
+    /* Separates text and image */
     justify-content: space-between;
 }
+
+/* Left text styles */
 .div-izq h2{
     font-size: 36px;
     margin: 0;
     padding: 0;
 }
+
+/* Green heading */
 .h2-green{
     color: #4CAF4F;
     margin: 0;
     padding: 0;
 }
+
 .div-izq p{
     margin: 0;
     padding: 0;
 }
 
+/* ================= SECTION 7 ================= */
+
 .section7{
     display: flex;
     justify-content: space-around;
+
+    /* NOTE: width value has a typo (760x instead of 760px) */
     width: 760x;
+
     background-color: #F5F7FA;
 }
+
+/* Testimonial container */
 .art-section7{
     align-items: center;
 }
+
+/* Text and icons container */
 .text-icons{
     display: flex;
     flex-direction: column;
 }
+
+/* Highlighted name */
 .text-icons h3{
     color: #4CAF4F;
 }
+
+/* Remove default margins */
 .text-icons h3{
     margin: 0;
 }
+
 .text-icons p{
     margin: 0;
 }
+
+/* ================= SECTION 8 ================= */
 
 .section8{
     display: flex;
@@ -251,6 +392,7 @@
     text-align: center;
 }
 
+/* ================= SECTION 9 ================= */
 
 .section9{
     display: flex;
@@ -258,74 +400,114 @@
     flex-direction: column;
     align-items: center;
     background-color: #F5F7FA;
-
 }
+
+/* Large final text */
 .section9 p{
     font-size: 64px;
     margin: 0;
 }
+
+/* Final button container */
 .buton-final{
     width: 160px;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+
     background-color: #4CAF4F; 
     border-radius: 4px;
     color: #fff;
-    margin:   30px 0px 30px 0;
+
+    margin: 30px 0px 30px 0;
+
+    /* Scales the button to make it more visible */
     transform: scale(1.2);
 }
+
+/* Hover effect for final button */
 .buton-final:hover{
     cursor: pointer;
     transition: 0.8s;
     background-color: #0d2c0a;
     box-shadow: 3px 3px 10px #b9b6b6;
 }
-    
+
+/* ================= FOOTER ================= */
 
 .footer1{
     background-color: #263238;
     display: flex;
+
+    /* Space between footer sections */
     justify-content: space-between;
+
     align-items: center;
 }
+
+/* Logo container (not used in HTML but styled) */
 .div-logo{
     display: flex;
     color: #fff;
 }
+
+/* Footer text */
 .art1-footer{
     color: #fff;
 }
+
+/* Footer links container */
 .art2-footer1{
     display: flex;
     justify-content: space-between;
 }
+
+/* Footer lists */
 .ul-finish{
     color: #fff;
     list-style: none;
 }
+
+/* Email input field */
 .input{
     border-radius: 10px;
     border: none;
+
+    /* Semi-transparent background */
     background-color: #f3eded1e;
     color: white;
-
 }
 
-
+/* Card shadow for feature boxes */
 .article-div2-sect3{
     box-shadow: 1px 1px 10px rgb(171, 178, 180);
 }
 
+/* ================= MEDIA QUERIES ================= */
 
-/*Teléfonos pequeños (0–480px) */
-@media (max-width: 480px) { body { background-color: lightcoral; }
+/* Small phones (0–480px) */
+@media (max-width: 480px) {
+    body {
+        background-color: lightcoral;
+    }
 }
-/* Teléfonos grandes y tablets pequeñas (481–768px) */
-@media (min-width: 481px) and (max-width: 768px) { body { background-color: lightblue; }
+
+/* Large phones and small tablets (481–768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
 }
-/* Tablets y laptops pequeñas (769–1024px) */
-@media (min-width: 769px) and (max-width: 1024px) { body { background-color: lightgreen; }
+
+/* Tablets and small laptops (769–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: lightgreen;
+    }
 }
-/* Laptops y escritorios grandes (1025px en adelante) */
-@media (min-width: 1025px) { body { background-color: white; }
+
+/* Large screens (1025px and up) */
+@media (min-width: 1025px) {
+    body {
+        background-color: white;
+    }
 }

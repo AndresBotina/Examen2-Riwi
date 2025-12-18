@@ -1,16 +1,35 @@
 <!DOCTYPE html>
+<!-- HTML5 declaration.
+     It tells the browser that this file uses the HTML5 standard -->
 <html lang="en">
   <head>
+    <!-- Defines the character encoding.
+         UTF-8 allows special characters, accents and symbols -->
     <meta charset="UTF-8" />
+
+    <!-- Viewport configuration.
+         This makes the layout adapt correctly to mobile, tablet and desktop screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title shown in the browser tab -->
     <title>Landing Page</title>
+
+    <!-- Link to the external CSS file where all styles are defined -->
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
 
   <body>
+    <!-- Main wrapper.
+         This div contains the entire structure of the page -->
     <div>
+      <!-- ================= HEADER ================= -->
+      <!-- The header usually contains the logo, navigation menu and user actions -->
       <header class="header1">
+        <!-- Logo image of the website -->
         <img src="./IMG/Logo.png" alt="img-logo" />
+
+        <!-- Navigation bar.
+             It contains the main links of the website -->
         <nav class="nav">
           <a href="">Home</a>
           <a href="">Service</a>
@@ -19,34 +38,58 @@
           <a href="">Testimonial</a>
           <a href="">FAQ</a>
         </nav>
+
+        <!-- Container for authentication actions -->
+        <!-- Usually used for login and register buttons -->
         <div class="login-signup">
           <a class="login" href="">Login</a>
           <a class="sing-up" href="">Sign up</a>
         </div>
       </header>
 
+      <!-- ================= SECTION 1 / HERO ================= -->
+      <!-- This is the hero section.
+           It is the first section users see when they open the page -->
       <section class="section1">
+        <!-- Article element used for main text content -->
         <article class="article-section1">
+          <!-- Main heading of the page.
+               <br> is used to force a line break -->
           <p class="titlep1">
-            Lessons and insights<span class="from8"></span> <br />from 8 years
+            Lessons and insights<span class="from8"> <br />from 8 years</span>
           </p>
+
+          <!-- Supporting paragraph that explains the main idea -->
           <p>
             Where to grow your business as a photographer: site or social media?
           </p>
+
+          <!-- Call to action button.
+               Encourages the user to register -->
           <a class="registrer" href="">Registrer</a>
         </article>
+
+        <!-- Decorative / illustrative image related to the hero section -->
         <img src="./IMG/Illustration.png" alt="img-ilustration" />
       </section>
+
+      <!-- Decorative dots.
+           Used only for visual design, not functional content -->
       <div class="dot">
         <img src="./IMG/Dot.png" alt="img-dot" />
       </div>
 
+      <!-- ================= SECTION 2 / CLIENTS ================= -->
+      <!-- This section shows trust by displaying clients or partners -->
       <section class="section2">
+        <!-- Text container for section title and description -->
         <div class="div-section2">
           <p class="titlep-our">Our clients</p>
           <p>We have been working with some Fortune 500+ clients</p>
         </div>
 
+        <!-- Logos of companies or partners -->
+        <!-- Usually displayed in a row using flexbox -->
         <div class="logos">
           <img src="./IMG/Vector.png" alt="" />
           <img src="./IMG/Logo.png" alt="" />
@@ -57,7 +100,11 @@
           <img src="./IMG/Logo(1).png" alt="" />
         </div>
       </section>
+
+      <!-- ================= SECTION 3 / FEATURES ================= -->
+      <!-- This section explains what the product or service offers -->
       <section class="section3">
+        <!-- Section header -->
         <div class="div1-section3">
           <p class="title-div1">
             Manage your entire community <br />
@@ -65,7 +112,10 @@
           </p>
           <p>Who is Nextcent suitable for?</p>
         </div>
+
+        <!-- Feature cards container -->
         <div class="div2-section3">
+          <!-- Feature card -->
           <article class="article-div2-sect3">
             <img src="./IMG/Icon.png" alt="" />
             <p class="p-title">Membership Organisations</p>
@@ -74,6 +124,8 @@
               membership renewals and payments
             </p>
           </article>
+
+          <!-- Feature card -->
           <article class="article-div2-sect3">
             <img src="./IMG/Icon(1).png" alt="" />
             <p class="p-title">Membership Organisations</p>
@@ -82,6 +134,8 @@
               membership renewals and payments
             </p>
           </article>
+
+          <!-- Feature card -->
           <article class="article-div2-sect3">
             <img src="./IMG/Icon(2).png" alt="" />
             <p class="p-title">Membership Organisations</p>
@@ -93,15 +147,22 @@
         </div>
       </section>
 
+      <!-- ================= SECTION 4 ================= -->
+      <!-- Two-column layout: image on the left, text on the right -->
       <section class="section4">
         <article class="article-section4">
+          <!-- Image container -->
           <div class="div-img-section4">
             <img src="./IMG/Frame 35.png" alt="img-frame" />
           </div>
+
+          <!-- Text content -->
           <div class="div2-section4">
             <h2 class="section4-h2">
               The unseen of spending three years at Pixelgrade
             </h2>
+
+            <!-- Long description text -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
               amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
@@ -110,6 +171,8 @@
               Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
               elementum pulvinar odio.
             </p>
+
+            <!-- Button styled as a link -->
             <a>
               <p class="btn-section4">Learn More</p>
             </a>
@@ -117,25 +180,35 @@
         </article>
       </section>
 
+      <!-- ================= SECTION 5 ================= -->
+      <!-- This section highlights achievements or statistics -->
       <section class="section5">
+        <!-- Left side text -->
         <div class="div-izq">
           <h2>Helping a Local</h2>
           <h2 class="h2-green">business reinvent itself</h2>
           <p>We reached here with our hard work and dedication</p>
         </div>
+
+        <!-- Right side image -->
         <div class="div-der">
           <img src="./IMG/Counts.png" alt="img-counts" />
         </div>
       </section>
+
+      <!-- ================= SECTION 6 ================= -->
+      <!-- Similar layout to section 4 but with different content -->
       <section class="section6">
         <article class="article-section4">
           <div class="div-img-section4">
             <img src="./IMG/pana.png" alt="img-frame" />
           </div>
+
           <div class="div2-section4">
             <h2 class="section4-h2">
               How to design your site footer like we did
             </h2>
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
               amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
@@ -144,6 +217,8 @@
               Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
               elementum pulvinar odio.
             </p>
+
+            <!-- Reusable call to action button -->
             <a>
               <p class="btn-section4">Learn More</p>
             </a>
@@ -151,35 +226,38 @@
         </article>
       </section>
 
+      <!-- ================= SECTION 7 / TESTIMONIAL ================= -->
+      <!-- This section shows a testimonial or user review -->
       <section class="section7">
+        <!-- User or brand image -->
         <div>
           <img src="./IMG/image 9.png" alt="" />
         </div>
+
+        <!-- Testimonial text -->
         <article class="art-section7">
           <div class="text-icons">
             <p>
               Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
-              lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
-              enim metus. Vivamus sed libero ornare, tristique quam in, gravida
-              enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet
-              elit at ligula molestie, nec molestie mi blandit. Suspendisse
-              cursus tellus sed augue ultrices, quis tristique nulla sodales.
-              Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
-              potenti. Quisque malesuada enim sapien, vitae placerat ante
-              feugiat eget. Quisque vulputate odio neque, eget efficitur libero
-              condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
-              amet magna.
+              lobortis sem dui, vel rutrum risus tincidunt ullamcorper...
             </p>
             <h3>Tim Smith</h3>
             <p>British Dragon Boat Racing Association</p>
           </div>
+
+          <!-- Logos related to the testimonial -->
           <div>
             <img src="./IMG/Frame 14.png" alt="" />
           </div>
         </article>
       </section>
+
+      <!-- ================= SECTION 8 / BLOG ================= -->
+      <!-- Blog preview or marketing content -->
       <section class="section8">
         <h2>Caring is the new marketing</h2>
+
+        <!-- Description text with line breaks for layout -->
         <p>
           The Nexcent blog is the best place to read about the latest membership
           insights, <br />
@@ -187,29 +265,41 @@
           community <br />
           are increasing their membership income and lot's more.​
         </p>
+
+        <!-- Blog preview images -->
         <div>
           <img src="./IMG/1.png" alt="" />
           <img src="./IMG/2.png" alt="" />
           <img src="./IMG/3.png" alt="" />
         </div>
       </section>
+
+      <!-- ================= SECTION 9 / FINAL CTA ================= -->
+      <!-- Final call to action before the footer -->
       <section class="section9">
         <p>
           Pellentesque suscipit <br />
           fringilla libero eu.
         </p>
+
+        <!-- Button container -->
         <div class="buton-final">
           <a class="arcontac">Get a Demo</a>
         </div>
       </section>
 
+      <!-- ================= FOOTER ================= -->
+      <!-- The footer contains legal info, links and contact details -->
       <footer class="footer1">
+        <!-- Footer branding and copyright -->
         <article class="art1-footer">
           <img src="./IMG/icono-blanco.png" alt="" />
           <p>Copyright &copy; 2020 Nexcent ldt.</p>
           <p>All rights reserved</p>
           <img src="./IMG/Social Links.png" alt="" />
         </article>
+
+        <!-- Footer navigation links -->
         <article class="art2-footer1">
           <ul class="ul-finish">
             <h4>Company</h4>
@@ -228,6 +318,8 @@
             <li>Privacy Policy</li>
             <li>Status</li>
           </ul>
+
+          <!-- Newsletter subscription -->
           <ul class="ul-finish">
             <h4>Stay up to date</h4>
             <input class="input" type="email" />
